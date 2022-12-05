@@ -19,7 +19,7 @@ import TabComponent from "./tab.component";
         <ng-content></ng-content>
     </div>
   `,
-  styleUrls: ['./../../../styles.scss']
+  styleUrls: ['./../../../../styles.scss']
 })
 export default class TabsComponent implements AfterContentInit {
   @ContentChildren(TabComponent) tabs!: QueryList<TabComponent>;

@@ -4,7 +4,7 @@ import { Component, HostListener, Inject, OnInit } from '@angular/core';
 @Component({
   selector: 'app-scrool',
   templateUrl: './scrool.component.html',
-  styleUrls: ['./../../../styles.scss']
+  styleUrls: ['./../../../../styles.scss']
 })
 export class ScroolComponent {
 

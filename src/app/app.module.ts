@@ -4,25 +4,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { NavbarComponent } from './layout/navbar/navbar.component';
-import { FooterComponent } from './layout/footer/footer.component';
-import { TabsModule } from './layout/tabs';
-import { ScroolComponent } from './layout/scrool/scrool.component';
-import { ServicesComponent } from './components/services/services.component';
+import { SharedComponentsModule } from './components/shared-components.module';
+import { FooterComponent, NavbarComponent, ScroolComponent, TabsModule } from './containers';
+
+const APP_CONTAINERS = [
+  FooterComponent,
+  NavbarComponent,
+  ScroolComponent,
+];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    FooterComponent,
-    ScroolComponent,
-    ServicesComponent,
-  ],
+  declarations: [AppComponent, ...APP_CONTAINERS],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     CarouselModule,
-    TabsModule
+    TabsModule,
+    SharedComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
