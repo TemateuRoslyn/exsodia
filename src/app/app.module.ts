@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { SharedComponentsModule } from './components/shared-components.module';
 import { FooterComponent, NavbarComponent, ScroolComponent, TabsModule } from './containers';
+import { AppRoutingModule } from './app-routing.module';
 
 const APP_CONTAINERS = [
   FooterComponent,
@@ -20,7 +21,8 @@ const APP_CONTAINERS = [
     BrowserAnimationsModule,
     CarouselModule,
     TabsModule,
-    SharedComponentsModule
+    AppRoutingModule,
+    SharedComponentsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
