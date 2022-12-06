@@ -5,13 +5,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { SharedComponentsModule } from './components/shared-components.module';
-import { FooterComponent, NavbarComponent, ScroolComponent, TabsModule } from './containers';
+import { DefaultLayoutComponent, FooterComponent, NavbarComponent, ScroolComponent, TabsModule } from './containers';
 import { AppRoutingModule } from './app-routing.module';
 
 const APP_CONTAINERS = [
   FooterComponent,
   NavbarComponent,
   ScroolComponent,
+  DefaultLayoutComponent,
 ];
 
 @NgModule({
